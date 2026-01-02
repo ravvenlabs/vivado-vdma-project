@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Jan 25 16:48:50 2024
+# Process ID: 14920
+# Current directory: D:/rit/private/mathworks/fileExchange/vivado-vdma-project/project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18124 D:\rit\private\mathworks\fileExchange\vivado-vdma-project\project\golden.xpr
+# Log file: D:/rit/private/mathworks/fileExchange/vivado-vdma-project/project/vivado.log
+# Journal file: D:/rit/private/mathworks/fileExchange/vivado-vdma-project/project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/rit/private/mathworks/fileExchange/vivado-vdma-project/project/golden.xpr
+update_compile_order -fileset sources_1
+open_bd_design {D:/rit/private/mathworks/fileExchange/vivado-vdma-project/src/design_1.bd}
+delete_bd_objs [get_bd_intf_nets axis_broadcaster_0_M00_AXIS]
+save_bd_design
+write_bd_tcl -force D:/craftCameras/firmware/file_exchange/simulink-vivado-reference-design/Fusion2/+Fusion2Registration/+Vivado2019_1/design_1.tcl

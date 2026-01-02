@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Jan 25 16:48:23 2024
+# Process ID: 22076
+# Current directory: D:/rit/private/mathworks/fileExchange/vivado-vdma-project
+# Command line: vivado.exe -notrace -mode batch -source project.tcl
+# Log file: D:/rit/private/mathworks/fileExchange/vivado-vdma-project/vivado.log
+# Journal file: D:/rit/private/mathworks/fileExchange/vivado-vdma-project\vivado.jou
+#-----------------------------------------------------------
+source project.tcl -notrace

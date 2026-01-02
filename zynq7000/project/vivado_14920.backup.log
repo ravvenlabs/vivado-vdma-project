@@ -1,0 +1,52 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Jan 25 16:48:50 2024
+# Process ID: 14920
+# Current directory: D:/rit/private/mathworks/fileExchange/vivado-vdma-project/project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18124 D:\rit\private\mathworks\fileExchange\vivado-vdma-project\project\golden.xpr
+# Log file: D:/rit/private/mathworks/fileExchange/vivado-vdma-project/project/vivado.log
+# Journal file: D:/rit/private/mathworks/fileExchange/vivado-vdma-project/project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/rit/private/mathworks/fileExchange/vivado-vdma-project/project/golden.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/rit/private/mathworks/fileExchange/vivado-vdma-project/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+update_compile_order -fileset sources_1
+open_bd_design {D:/rit/private/mathworks/fileExchange/vivado-vdma-project/src/design_1.bd}
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - ps7_0_axi_periph
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_50M
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_1
+Adding component instance block -- xilinx.com:user:cam_axi:1.0 - cam_axi_1
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_0
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_2
+Adding component instance block -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma_3
+Adding component instance block -- xilinx.com:user:cam_axi:1.0 - cam_axi_2
+Adding component instance block -- xilinx.com:user:read_trigger:1.0 - read_trigger_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_1
+Adding component instance block -- xilinx.com:ip:axis_broadcaster:1.1 - axis_broadcaster_0
+Successfully read diagram <design_1> from BD file <D:/rit/private/mathworks/fileExchange/vivado-vdma-project/src/design_1.bd>
+delete_bd_objs [get_bd_intf_nets axis_broadcaster_0_M00_AXIS]
+save_bd_design
+Wrote  : <D:\rit\private\mathworks\fileExchange\vivado-vdma-project\src\design_1.bd> 
+Wrote  : <D:/rit/private/mathworks/fileExchange/vivado-vdma-project/src/ui/bd_1f5defd0.ui> 
+write_bd_tcl -force D:/craftCameras/firmware/file_exchange/simulink-vivado-reference-design/Fusion2/+Fusion2Registration/+Vivado2019_1/design_1.tcl
+INFO: [BD 5-148] Tcl file written out <D:/craftCameras/firmware/file_exchange/simulink-vivado-reference-design/Fusion2/+Fusion2Registration/+Vivado2019_1/design_1.tcl>.
+
+WARNING: [BD 5-339] The block design <design_1> has not been validated, therefore, a block design created using this Tcl file
+<D:/craftCameras/firmware/file_exchange/simulink-vivado-reference-design/Fusion2/+Fusion2Registration/+Vivado2019_1/design_1.tcl> may result in errors during validation.
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 25 17:04:47 2024...
