@@ -5,10 +5,10 @@
 # ##############################################################################
 
 #set projectName
-set projectName golden
+set projectName kv260vdma
 
 # 0: setup project, 1: setup and compile project
-set compileProject 0
+set compileProject 1
 
 # 0: leave messy, 1: blow away everything but sources and .bit file
 set cleanup 0
@@ -50,13 +50,13 @@ if { $compileProject == 0 } {
   launch_runs impl_1 -to_step write_bitstream -jobs 8
   wait_on_run impl_1
   
-  write_hw_platform -fixed -include_bit -force -file system.xsa
+  write_hw_platform -fixed -include_bit -force -file kv260vdma.xsa
   
   close_project
   
   # copy over .bit file to system.bit
-  file copy -force project/$projectName.runs/impl_1/design_1_wrapper.bit system.bit
-  file copy -force project/$projectName.runs/impl_1/design_1_wrapper.bin system.bin
+  file copy -force project/$projectName.runs/impl_1/design_1_wrapper.bit kv260vdma.bit
+  file copy -force project/$projectName.runs/impl_1/design_1_wrapper.bin kv260vdma.bin
   
   # create system.bit.bin file for linux flashing
   #exec bootgen -image bootimage.bif -arch zynqmp -process_bitstream bin
