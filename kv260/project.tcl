@@ -8,7 +8,7 @@
 set projectName golden
 
 # 0: setup project, 1: setup and compile project
-set compileProject 1
+set compileProject 0
 
 # 0: leave messy, 1: blow away everything but sources and .bit file
 set cleanup 0
